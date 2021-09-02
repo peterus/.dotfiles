@@ -99,5 +99,9 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+
+alias ll="ls -al"
+
+prompt_context(){}
+[[ :$PATH: == *:$HOME/bin:* ]] || PATH=$HOME/bin:$PATH
 
