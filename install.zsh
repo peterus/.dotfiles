@@ -48,5 +48,6 @@ unzip dotfiles_*.zip
 mv dotfiles $HOME/bin
 rm -rf dotfiles_*.zip
 
+rm -rf $HOME/.zshrc
 $HOME/bin/dotfiles link
 
