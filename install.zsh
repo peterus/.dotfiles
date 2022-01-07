@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 
 sudo apt update
 sudo apt install -y \
@@ -7,6 +7,7 @@ sudo apt install -y \
 	vim \
 	htop \
 	wget \
+	unzip \
     apt-transport-https \
     ca-certificates \
     curl \
