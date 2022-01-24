@@ -1,20 +1,4 @@
-#!/bin/bash
-
-sudo apt update
-sudo apt install -y \
-    zsh \
-	git \
-	vim \
-	htop \
-	wget \
-	unzip \
-    apt-transport-https \
-    ca-certificates \
-    curl \
-    gnupg \
-    lsb-release
-
-sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
+#!/bin/zsh
 
 if [ `uname -m` = "armv7l" ]; then
     curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
@@ -50,4 +34,3 @@ rm -rf dotfiles_*.zip
 
 rm -rf $HOME/.zshrc
 $HOME/bin/dotfiles link
-
